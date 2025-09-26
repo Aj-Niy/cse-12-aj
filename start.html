@@ -3,91 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experiment 1 </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>First Heading</h1>
-    <h2>Second Heading</h2>
-    <h3>Third Heading</h3>
-    <h4>Fourth Heading</h4>
-    <!-- commenting -->
+    <div class="container">
+        <h1>Course Curriculum</h1>
+        <h2>Ajit Pandey-014</h2>
+        
+        <p id="welcome-message">
+            Welcome to my <b>Experiment 1</b> solution. It uses <i>Italic</i>, <u>Underlined</u>, <strong>Strong</strong> and various fonts.
+            <br>
+        </p>
 
-    <div>
-        This is a div element(block-level)
-    </div>
-    <span>This is a span element(inline)</span>
-    <anchor>This is an anchor element(inline)</anchor>
-    <em>Italians are swavy</em>
-    <strong>Strong is the new black</strong>
-    <a href="https://github.com/Aj-Niy/cse-12-aj" target="_blank" style="display:block; margin:40px auto; width:max-content; padding:12px 24px; background:#24292f; color:#fff; border-radius:8px; text-decoration:none; font-size:1.2em; font-family:sans-serif; box-shadow:0 2px 8px #0002;">
-        Visit My GitHub Repo: cse-12-aj
-    </a>
-
-    <ol>
-
-        <ol>    
-            <dl>
-                NEWW
-            </dl>
-
+        <h3>Highlights</h3>
+        <ul>
+            <li><b>Hands-on Projects</b></li>
+            <li><i>Interactive Lessons</i></li>
+            <li><u>Real-world Examples</u></li>
+            <li>Support &amp; Community</li>
+        </ul>
+        
+        <h3>Course Modules</h3>
+        <ol>
+            <li>HTML Basics</li>
+            <li>CSS Fundamentals</li>
+            <li>JavaScript Essentials</li>
+            <li>Project Work</li>
         </ol>
-    </ol>
 
-    <h2>Linked List Demo</h2>
-    <div>
-        <input type="text" id="ll-input" placeholder="Enter value">
-        <button onclick="addNode()">Add Node</button>
-        <button onclick="printList()">Print List</button>
-        <div id="ll-output"></div>
+        <h3>Module Details</h3>
+        <dl>
+            <dt><b>HTML Basics</b></dt>
+            <dd>Learn about tags, elements, attributes, and structure.</dd>
+            <dt><b>CSS Fundamentals</b></dt>
+            <dd>Style your pages with colors, layouts, and fonts.</dd>
+            <dt><b>JavaScript Essentials</b></dt>
+            <dd>Make your pages interactive and dynamic.</dd>
+            <dt><b>Project Work</b></dt>
+            <dd>Apply your skills to build a real website.</dd>
+        </dl>
+
+        <h3>Nested &amp; Mixed Lists</h3>
+        <ul>
+            <li>HTML
+                <ol>
+                    <li>Tags</li>
+                    <li>Attributes</li>
+                </ol>
+            </li>
+            <li>CSS
+                <ul>
+                    <li>Selectors</li>
+                    <li>Properties</li>
+                </ul>
+            </li>
+            <li>JavaScript
+                <ol>
+                    <li>Variables</li>
+                    <li>Functions
+                        <ul>
+                            <li>Declaration</li>
+                            <li>Expression</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+
+        <h3>Special Characters</h3>
+        <p>
+            &copy; 2025 WebDev CSE-12 &mdash; All rights reserved.<br>
+            For queries, email us at <u>info&#64;webdevCSE12.com</u>.<br>
+            Symbols: &lt; &gt; &amp; &euro; &yen; &pound; &reg; &trade;
+        </p>
+        <p>
+            <a href="https://www.google.com" target="_blank">Visit Google</a>
+        </p>
+        
+        <button id="alert-button">Click for a simple alert</button>
+        <p id="timestamp-message">This page was loaded on: </p>
     </div>
-
-    <script>
-    class ListNode {
-        constructor(value) {
-            this.value = value;
-            this.next = null;
-        }
-    }
-
-    class LinkedList {
-        constructor() {
-            this.head = null;
-        }
-        add(value) {
-            const newNode = new ListNode(value);
-            if (!this.head) {
-                this.head = newNode;
-            } else {
-                let curr = this.head;
-                while (curr.next) curr = curr.next;
-                curr.next = newNode;
-            }
-        }
-        print() {
-            let curr = this.head;
-            let result = [];
-            while (curr) {
-                result.push(curr.value);
-                curr = curr.next;
-            }
-            return result.join(" → ");
-        }
-    }
-
-    const ll = new LinkedList();
-
-    function addNode() {
-        const val = document.getElementById('ll-input').value;
-        if (val) {
-            ll.add(val);
-            document.getElementById('ll-input').value = '';
-        }
-    }
-
-    function printList() {
-        document.getElementById('ll-output').innerText = ll.print();
-    }
-    </script>
     
+    <script src="script.js"></script>
 </body>
 </html>
