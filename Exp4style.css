@@ -1,20 +1,93 @@
-form{
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    align-items: center;
-}
-h2 {
-    color: #333;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    align-items: center;
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('images/Backgroundglassmorphjpg.jpg') no-repeat center center/cover;
+  overflow: hidden;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px 50px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 320px;
+  text-align: center;
+}
+
+.glass-card h2 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+
+.forgot {
+  font-size: 0.8rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot:hover {
+  color: #fff;
+}
+
+
+button {
+  background: linear-gradient(90deg, #00f260, #0575e6);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 255, 150, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 255, 150, 0.5);
 }
