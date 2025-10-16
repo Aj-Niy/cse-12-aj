@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 3</title>
+    <link rel="stylesheet" href="Exp3style.css">
+</head>
+<body>
+    <h2>Introduction to Table</h2>
+    <table border="1" cellpadding="10" cellspacing="2">
+        <caption>Time Table(CSE-12)</caption>
+        <tbody>
+            <tr>
+                <th>Days/Time</th>
+                <th>8:50-9:40</th>
+                <th>9:40-10:30</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td>FSD</td>
+                <td>DS</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>Chemistry</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Mathematics</td>
+                <td>Essentials of AI</td>
+            </tr>
+            <tr>
+                <td colspan="3">@Copyright</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+    <table border="1" cellpadding="10" cellspacing="2">
+        <caption>Rowspanning</caption>
+        <tbody>
+            <tr>
+                <th>Days/Time</th>
+                <th>8:50-9:40</th>
+                <th>9:40-10:30</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td rowspan="2">FSD</td>
+                <td>DS</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Mathematics</td>
+                <td>Essentials of AI</td>
+            </tr>
+            <tr>
+                <td colspan="3">@Copyright</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+    <table border="1" cellpadding="10" cellspacing="2">
+        <caption>Nested Table</caption>
+        <tbody>
+            <tr>
+                <th>Days/Time</th>
+                <th>8:50-9:40</th>
+                <th>9:40-10:30</th>
+            </tr>
+            <tr>
+                <table border="1" cellpadding="5" cellspacing="1">
+                    <tbody>
+                    <tr>
+                        <th>txt1</th>
+                        <td>txt2</td>
+                    </tr>
+                    <tr>
+                        <th>txt3</th>
+                        <td>txt4</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
