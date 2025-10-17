@@ -108,4 +108,21 @@ select option {
   color: #fff;
 }
 
+textarea {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  resize: none;
+}
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+textarea:focus {
+  background: rgba(255, 255, 255, 0.35);
+}
 
