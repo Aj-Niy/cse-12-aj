@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Glass Login Page</title>
+  <title>Glassmorph Form</title>
   <link rel="stylesheet" href="Exp4style.css" />
 </head>
 
 <body>
     <div class="glass-card">
+      <h2>Hotel Room Booking Form</h2>
 
-    <h2>Login Form</h2>
+      <form>
+        <input type="text" placeholder="Full Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Phone Number" />
+        <input type="date" placeholder="Check-in Date" />
+        <input type="date" placeholder="Check-out Date" />
 
-    <form>
-      <input type="text" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <a href="#" class="forgot">Forgot Password?</a>
-      <button type="button">Login</button>
-    </form>
+        <select required>
+          <option value="" disabled selected>Select Room Type</option>
+          <option value="single">Single Room</option>
+          <option value="double">Double Room</option>
+          <option value="deluxe">Deluxe Room</option>
+          <option value="suite">Suite</option>
+          <option value="family">Family Room</option>
+        </select>
+
+        <input type="text" placeholder="Number of Guests" />
+        <input type="text" placeholder="Special Requests" />
+
+        <div class="button-group">
+          <button type="button">Book Now</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
     
     </div>
 </body>

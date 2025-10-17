@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('images/Backgroundglassmorphjpg.jpg') no-repeat center center/cover;
+  background: url('images/Hotel2-Form.jpg') no-repeat center center/cover;
   overflow: hidden;
 }
 
@@ -22,7 +22,7 @@ body {
   backdrop-filter: blur(12px); 
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 320px;
+  width: 420px;
   text-align: center;
 }
 
@@ -61,33 +61,51 @@ input:focus {
 }
 
 
-.forgot {
-  font-size: 0.8rem;
-  text-align: right;
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  transition: color 0.3s ease;
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-.forgot:hover {
+.button-group button {
+  width: 45%;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00f260, #0575e6);
+  color: white;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.button-group button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 255, 150, 0.5);
+}
+
+
+select {
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  appearance: none;
+}
+
+select:focus {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+select option {
+  background-color: #333;
   color: #fff;
 }
 
 
-button {
-  background: linear-gradient(90deg, #00f260, #0575e6);
-  border: none;
-  border-radius: 20px;
-  padding: 10px 0;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 255, 150, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 255, 150, 0.5);
-}
