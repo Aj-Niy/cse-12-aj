@@ -1,18 +1,87 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, #6d8fd2, #80ee8e);
+    color: #333;
     margin: 0;
-    padding: 20px;
-    align-items: center;
+    padding: 40px;
 }
 
-h2 {
-    color: #333;
-    text-align: center;
-}
-table{
+
+.container {
+    max-width: 1100px;
     margin: auto;
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 30px 40px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+
+table {
+    width: 100%;
     border-collapse: collapse;
-    width: 80%;
-    background-color:rgb(210, 246, 255);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    transition: background 0.3s ease;
+}
+
+th {
+    background-color: #f2f5f7;
+    font-weight: 600;
+    color: #333;
+}
+
+.electrical { background-color: #cfe8ff; }
+.physics { background-color: #d8f9d8; }
+.mathematics { background-color: #ffd480; }
+.dsa { background-color: #fffaf0; }
+.cad { background-color: #d2691e; color: #fff; }
+.evs { background-color: #007a00; color: #fff; }
+.webdev { background-color: #7f8c8d; color: #fff; }
+.ai { background-color: #fffca9; }
+.mentormentee { background-color: #26628d; color: #fff; }
+.lunch { background-color: #f1f1f1; font-weight: bold; color: #666; }
+
+
+.mentor-table table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.mentor-table th, .mentor-table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    background-color: #fff;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 25px;
+    color: #777;
 }
