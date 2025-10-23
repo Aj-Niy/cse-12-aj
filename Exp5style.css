@@ -1,0 +1,50 @@
+.heading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+    width: 380px;
+}
+
+
+.footer {
+    text-align: center;
+    border-top: 2px solid black;
+    padding-top: 10px;
+    margin-top: 30px;
+    color: #333;
+}
+.genderr{
+    display: flex;
+    gap: 15px;
+}
+
+input[type="submit"],input[type="reset"]{
+    background: linear-gradient(90deg, #96fefb , #8efc99) ;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}

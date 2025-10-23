@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Exp5style.css" />
+</head>
+<body>
+    <h1 class="heading">Student Registration Form</h1>
+
+    <form method="get" action="SubmitExp5.html">
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name" required />
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your Email address" required />
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password" required />
+
+        <div class="genderr">
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="MALE" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="FEMALE" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="OTHER" />
+            <label for="other">Other</label>
+        </div>
+
+        <label>Course:</label>
+        <select required>
+            <option value="" disabled selected>Select Course</option>
+            <option value="Btech">BTech</option>
+            <option value="Mtech">MTech</option>
+            <option value="IT">IT</option>
+            <option value="mba">MBA</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Phone No.:</label>
+        <input type="text" placeholder="Enter your phone number" required />
+
+        <label>Address:</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+
+        <div class="buttons">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+
+    <footer class="footer">&copy; Copyright: Student Registration Portal</footer>
+</body>
+</html>
+
+
