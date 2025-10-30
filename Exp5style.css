@@ -46,5 +46,6 @@ input[type="submit"],input[type="reset"]{
 }
 .buttons{
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
