@@ -1,0 +1,57 @@
+h1{
+    color: rgb(166, 255, 193);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+body{
+    background: url(Images/Backgroundglassmorphjpg.jpg) no-repeat center center/cover;
+}
+.glasscard1{
+    border: 2px solid rgba(255, 255, 255,0.6);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(52, 59, 152, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.box1{
+    border: 2px solid rgb(181, 164, 164);
+    background-image: linear-gradient(90deg, rgb(150, 207, 171), rgb(201, 201, 143));
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+    padding: 20px,20px,20px,20px;
+    align-items: center;
+    margin: 15px;
+
+}
+.box2{
+    border: 2px solid rgb(46, 154, 255);
+    background-image: linear-gradient(90deg, rgb(79, 255, 143), rgb(255, 255, 92));
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+    margin: 15px;
+}
+.box3{
+    border: 2px solid rgb(255, 46, 46);
+    background-image: linear-gradient(90deg, rgb(79, 255, 143), rgb(255, 255, 92));
+    border-radius: 5px;
+    width: 200px;
+    height: 20px;
+    margin: 15px;
+}
