@@ -3,148 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Area</title>
-    <style>
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border: solid black 2px;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 50px;
-
-
-        }
-
-        .image_circle{
-            width: 50px;
-            height: 50px;
-            background-color: rgb(94, 196, 230);
-            border-radius: 50%;
-            box-shadow: 2px 2px 10px gray;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .heading{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 30px;
-            background-color: lightgreen;
-            border-radius: 10px;
-        }
-        .card{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            height: 250px;
-            gap: 10px;
-            box-shadow: 2px 2px 10px gray;
-            border-radius: 10px;
-        }
-        .container2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            border: solid black 2px;
-            border-radius: 10px;
-            width: 350px;
-        }
-        .box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 150px;
-            height: 100px;
-            border: solid black 2px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .container3{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            border: solid black 2px;
-            border-radius: 10px;
-            width: 800px;
-            margin-top: 50px;
-            flex-wrap: wrap;
-        }
-        .group{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-        
-
-
-    </style>
+    <title>Student Profile Cards – Flexbox</title>
+    <link rel="stylesheet" href="TestAreastyle.css">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="image_circle">AB</div>
-            <div class="heading">Btech</div>
-            <b>Btech-CSE</b><br>Roll.NO<br>1stYear
-        </div>
-        <div class="card">
-            <div class="image_circle">CD</div>
-            <div class="heading">Roll.No</div>
-            <b>BTech-CSE</b><br>Roll.NO<br>2ndYear
 
-        </div>
-        <div class="card">
-            <div class="image_circle">EF</div>
-            <div class="heading">Section</div>
-            <b>BTech-CSE</b><br>Section<br>3rdYear
+    <h1 class="title">Student Profile Cards</h1>
 
+    <div class="card-container">
+
+        <div class="card">
+            <div class="avatar">JK</div>
+            <h2>Jeet Kumar</h2>
+            <p>B.Tech – CSE</p>
+            <p>Roll No: 21CS1007</p>
+            <p>1st Year</p>
         </div>
 
-        
-    </div>
-    <div class="group">
-    <div class="container2">
-        <div class="box">
-            BOX1
+        <div class="card">
+            <div class="avatar">AR</div>
+            <h2>Asha Rani</h2>
+            <p>B.Tech – IT</p>
+            <p>Roll No: 21IT1012</p>
+            <p>1st Year</p>
         </div>
-        <div class="box">
-            box2
-        </div>
-        <div class="box">
-            box3
-        </div>
-        <div class="box">
-            box4
+
+        <div class="card">
+            <div class="avatar">RK</div>
+            <h2>Rohit Kumar</h2>
+            <p>B.Tech – ECE</p>
+            <p>Roll No: 21EC1009</p>
+            <p>1st Year</p>
         </div>
 
     </div>
-    <div class="container3">
-        <div class="box">
-            BOX1
-        </div>
-        <div class="box">
-            box2
-        </div>
-        <div class="box">
-            box3
-        </div>
-            <div class="box">
-                box4
-            </div>
-        </div>
-    </div>
-
-    
 
 </body>
 </html>
