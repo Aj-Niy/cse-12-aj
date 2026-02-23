@@ -56,9 +56,11 @@ th {
 .mathematics { background-color: #ffd480; }
 .dsa { background-color: #fffaf0; }
 .cad { background-color: #d2691e; color: #fff; }
-.evs { background-color: #007a00; color: #fff; }
+.mechanical { background-color: #32bb32; color: rgb(56, 55, 55); }
 .webdev { background-color: #7f8c8d; color: #fff; }
-.ai { background-color: #fffca9; }
+.electronics { background-color: #cfe8ff; }
+.dt { background-color: #ecfe49; }
+.sskills { background-color: rgb(153, 213, 202); color: black; }
 .mentormentee { background-color: #26628d; color: #fff; }
 .lunch { background-color: #f1f1f1; font-weight: bold; color: #666; }
 
